@@ -107,18 +107,16 @@ body {
                 - Use the document.createElement to create the new List Item
                 - Append the child to the UL
             */
-    
-      // create an empty list item
-      let newListItem = document.createElement("li")
-      // select input text
-      newListItem.innerText = input
-      // select the parent
-      let parentUl = document.getElementById("myTaskList")
-      // append our element to it
-      parentUl.appendChild(newListItem)
-      
 
-      
+    function addNewTask() {
+    let newTask = document.querySelector("#newTask");
+    li = document.createElement("li");
+    li.innerText = newTask.value;
+    document.querySelector("ul").appendChild(li);
+    newTask.value = "";
+    console.log(newTask);
+}
+       
       /* EXERCISE 6: 
                 Create a method "removeLast" which removes the last item from the task list
             */
