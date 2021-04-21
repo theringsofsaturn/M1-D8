@@ -138,6 +138,7 @@ The have a list of tasks and can, at any time, add a new one, delete one or sort
       function getTasksAsArray(){
       let taskList = document.querySelectorAll("#myTaskList li")
       let arrayTaskAsString = []
+
       for(let i = 0; i < taskList.length; i++){
         arrayTaskAsString.push(taskList[i].innerText)
       }
@@ -149,6 +150,15 @@ The have a list of tasks and can, at any time, add a new one, delete one or sort
                Create a method "changeTaskBackgroundColor" which takes the color from the color picker with an 
                onchange event listener ad applies it as background to every list item
             */
+
+      function changeTaskBackgroundColor(){
+      let colorPicker = document.getElementById("colorPicker").value
+      let taskList = document.querySelectorAll("#myTaskList")
+
+      for(let i = 0; i < taskList.length; i++){
+        taskList[i].style.backgroundColor = colorPicker
+      }
+      }
 
       /* EXTRA */
 
