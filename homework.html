@@ -110,6 +110,15 @@ The have a list of tasks and can, at any time, add a new one, delete one or sort
                 Create a method "removeLast" which removes the last item from the task list
             */
 
+      function removeLast(){
+      let taskList = document.querySelectorAll("#myTaskList li")
+      if(taskList.length > 0){
+        taskList[taskList.length-1].remove()
+      }else{
+        alert("There is no item on this list!")
+      }
+      }
+      
       /* EXERCISE 7: 
                 Create a method "removeFirst" which removes the first item from the task list
             */
