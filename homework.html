@@ -27,17 +27,36 @@ The have a list of tasks and can, at any time, add a new one, delete one or sort
        Style every button of the page to be bigger
     */
 
-    #taskList {
-       background-color: rgb(63, 200, 205);
-    }
-    #taskList li{
-      border: 3px solid black;
-      font-weight: bold;
-      font-size:  30px;
-    }
-    input[type=button]{
-       font-size: 30px;
-    }
+ul {
+    border: 4px solid green;
+    border-radius: 3px;
+    font-size: xx-large;
+}
+
+li {
+    list-style: none;
+}
+
+button,
+input {
+    background-color: #4c93af;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 3px;
+}
+
+body {
+    text-align: center;
+    text-decoration: none;
+    height: 100vh;
+}
+
+#newTask {
+    background: #a5d9ab;
+    color: red;
+    font-size: xx-large;
+}
+
 
     </style>
   </head>
@@ -57,10 +76,7 @@ The have a list of tasks and can, at any time, add a new one, delete one or sort
         Create a button "Remove Last Task" to trigger the method "removeLast"
         -->
 
-    <input type="button" 
-        onclick="removeLast()"
-        value="Remove Last Task" 
-        />
+        <button onclick="removeFirst()">Remove First</button>
 
     <!-- EXERCISE 4
         Create a button "Remove First Task" to trigger the method "removeFirst"
