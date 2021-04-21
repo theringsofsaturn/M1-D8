@@ -113,7 +113,7 @@ The have a list of tasks and can, at any time, add a new one, delete one or sort
       function removeLast(){
       let taskList = document.querySelectorAll("#myTaskList li")
       if(taskList.length > 0){
-        taskList[taskList.length-1].remove()
+        taskList[taskList.length-1].remove() 
       }else{
         alert("There is no item on this list!")
       }
@@ -122,6 +122,15 @@ The have a list of tasks and can, at any time, add a new one, delete one or sort
       /* EXERCISE 7: 
                 Create a method "removeFirst" which removes the first item from the task list
             */
+
+      function removeFirst(){
+      let taskList = document.querySelectorAll("#myTaskList li")
+      if(taskList.length > 0){
+        taskList[0].remove() 
+      }else{
+      alert("There is no item on this list!")
+      }
+      }
 
       /* EXERCISE 8: 
                Create a method "getTasksAsArray" which returns, and prints to the console an array containing the tasks as string
